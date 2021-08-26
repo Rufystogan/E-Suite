@@ -138,8 +138,6 @@ video{
 /*terms of Use*/
 
 .touSect{
-      background-image: url(img/tou_bg.svg);
-      background-size: cover;
       min-height: 120vh;
       width: auto;
       overflow: auto;
