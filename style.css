@@ -80,8 +80,6 @@ body{
 
 /*About Section*/
 .aboutSect{
-      background-image: url(img/about_bg.svg);
-      background-size: cover;
       min-height: 95vh;
       width: auto;
 }
@@ -102,8 +100,6 @@ video{
 
 /*Facilities Section*/
 .facilitySect{
-      background-image: url(img/facility_bg.svg);
-      background-size: cover;
       min-height: 230vh;
       width: auto;
 
@@ -122,9 +118,6 @@ video{
 }
 /*Steps Of Booking*/
 .booking_stepSect{
-      background-image: url(img/bookingSteps_bg.svg);
-      background-repeat: no-repeat;
-      background-size: cover;
       padding-top: 110px;
       min-height: 135vh;
       width: auto;
@@ -160,7 +153,6 @@ video{
 
 /*Support Section*/
 .supportSect{
-      background-image: url(img/support_bg.svg);
       min-height: 135vh;
       width: auto;
 }
