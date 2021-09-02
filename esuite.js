@@ -64,7 +64,7 @@ var validateInputs = function validateInputs(inputs) {
   var validForm = true;
   inputs.each(function(index) {
     var input = $(this);
-    if (!input.val()) {
+    if (!input.val() || !$("input:checkbox[name='termCheck']").is(':checked')){
       $("#bookSubmit").attr("disabled", "disabled");
       validForm = false;
     }
