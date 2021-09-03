@@ -1,21 +1,5 @@
-html {
-  scroll-behavior: smooth;
-}
-
-body{
-	font-family: poppin_regular;
-}
-
-#fbIcon , #igIcon{
-      color: #d33127;
-}
-
-/*responsive img*/
-.img-responsive{
-  width: 100%;
-  height: auto;
-}
-
+/* GLOBAL STYLES
+-------------------------------------------------- */
 /*custom-font*/
 
 @font-face {
@@ -33,11 +17,54 @@ body{
       src: url(font/Poppins-Bold.ttf);
 }
 
-/*Navigation Section*/
+html {
+  scroll-behavior: smooth;
+}
 
+body {
+  font-family: poppin_regular;
+}
+
+#fbIcon , #igIcon{
+      color: #d33127;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 42rem;
+  background-color: #777;
+}
+.carousel-item > img {
+  position: cover;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+  }
+
+/* NAVIGATION
+-------------------------------------------------- */
 #lwLogo{
-	height: 10vh;
-	width: auto;
+      height: 4rem;
+      width: auto;
 }
 
 /* change the link color and add padding for height */
@@ -55,39 +82,27 @@ body{
 }
 
 #bookBtn{
-	color: #000000;
-}
-
-/*Jumbotron + Photoslider Section*/
-
-#carouselFade{
-      margin-top: 100px;
-}
-
-.carousel-inner{
-      margin-top: 40px;
-      height: 100%;
-      width: auto;
-}
-
-.bookBtnNow{
       color: #000000;
-      margin-bottom: 20%;
-      padding: 10px 20px;
-      font-size: 20pt;
-      border-radius: 5px;
+}
+
+/* All CONTENT
+-------------------------------------------------- */
+.home-section {
+  height: 100%;
+  padding-top: 4rem;
 }
 
 /*About Section*/
-.aboutSect{
-      min-height: 95vh;
-      width: auto;
+
+.about-section {
+  height: 100%;
+  padding-top: 6rem;
 }
+
 
 .aboutRow{
       height: 50vh;
       width: auto;
-      padding-top: 200px;
 }
 
 /*e-suite Video*/
@@ -99,14 +114,9 @@ video{
 }
 
 /*Facilities Section*/
-.facilitySect{
-      min-height: 230vh;
-      width: auto;
-
-}
-
-.facilityRow{
-      padding-top: 110px;
+.facilities-section {
+  height: 100%;
+  padding-top: 6rem;
 }
 
 .hsseRow{
@@ -116,64 +126,59 @@ video{
 .moreFacilityRow{
       padding-top: 50px;
 }
-/*Steps Of Booking*/
-.booking_stepSect{
-      padding-top: 110px;
-      min-height: 135vh;
-      width: auto;
-      overflow: auto;
-      text-overflow: ellipsis;
-}
 
-
-.booking_stepsRow{
-      height: 50vh;
-      width: auto;
+/*Booking Steps Section*/
+.bookingStep-section{
+  height: 100%;
+  padding-top: 6rem;
 }
 
 .stepsPhoto{
       box-shadow: 5px 5px rgba(0,0,0, 0.4);
       border-radius: 5px;
 }
-/*terms of Use*/
 
-.touSect{
-      min-height: 120vh;
-      width: auto;
-      overflow: auto;
-}
-
-.touRow{
-      padding-top: 110px;
-      height: 50vh;
-      width: auto;
+/*Terms of use*/
+.terms-section{
+  height: 100%;
+  padding-top: 6rem;
 }
 
 /*Support Section*/
-.supportSect{
-      min-height: 135vh;
-      width: auto;
+.support-section{
+  height: 100%;
+  padding-top: 6rem;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 5rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgba(0,0,0, 0.4);
 }
 
-.supportRow{
-      padding-top: 100px;
-      align-items: center;
-      height: 70vh;
-      width: auto;
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute; 
 }
 
-.contactUsCol01{
-      padding-top: 50px;
-}
-
-.contactUsCol02{
-      padding-top: 50px;
-}
-
-iframe{
-      box-shadow: 5px 5px rgba(0,0,0, 0.4);
-      border-radius: 5px;
-}
+ /* BOOKING UI SECTION
+-------------------------------------------------- */
 
 /*Booking Section*/
 .bookSect{
