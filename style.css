@@ -99,12 +99,6 @@ body {
   padding-top: 6rem;
 }
 
-
-.aboutRow{
-      height: 50vh;
-      width: auto;
-}
-
 /*e-suite Video*/
 video{
       box-shadow: 5px 5px rgba(0,0,0, 0.4);
