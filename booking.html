@@ -9,39 +9,47 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
      <!--Custome CSS-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <!--Datapicker-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-    <title>liveWIRE E-Suite</title>
+
+    <title>E-Suite</title>
   </head>
   <body>
-    <!--Navigation Section-->
+
+  <header>
+<!--  NAVIGATION
+      ================================================== -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light mainNav">
     <div class="container">
           <a class="navbar-brand font-weight-bold" href="index.html"><span><img src="img/LW_NoBG.png" id="lwLogo"></span></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-            <div class="nav-item js-scroll-trigger ml-auto">
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="nav-item js-scroll-trigger ml-auto">
                 <a class="btn btn-outline-warning font-weight-bold" type="submit" id="homeBtn" href="index.html">Back to Homepage</a>
             </div>
           </div>
       </div> 
       </nav>
-
-      <!--Booking Section-->
-      <section class="page-section bookNow" id="bookNow">
-      <div class="container-fluid bookSect">
-            <div class="row bookBox">
-                <div class="col-md-5">
-                  <div class="container mapUi d-flex p-1">
-                      <img src="img/sample_map.png" alt="esuite_map" id="esuiteMap">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="container bookUi">
-                      <div class="row row01 pt-4">
+    </header>
+<!--  BOOKING SYSTEM UI
+      ================================================== -->
+<section class="bookingUi-section" id="terms_of_use">
+  <div class="container-fluid" id="bookSect">
+    <div class="container" id="bookGrid">
+<!--  BOOKING SYSTEM UI
+      ================================================== --> 
+        <div class="mapUi">
+          <div class="container text-center">
+          <img src="img/sample_map.png" class="img-fluid" alt="esuite_map" id="esuiteMap">
+        </div>
+        </div>
+<!--  BOOKING SYSTEM UI
+      ================================================== -->
+        <div class="bg-warning">
+          <div class="container">
+                      <div class="row pt-4">
                           <div class="col-sm-6">
                               <h1 class="font-weight-bold">Book Your Seat</h1>
                           </div>
@@ -118,8 +126,7 @@
                                     </select>
                                 </div>   
                             </div>
-                              
-                                                          <!--Terms & Condition Modal-->
+                            <!--Terms & Condition Modal-->
                             <div class="container">
                               <div class="form-check">
                                 <input type="checkbox" name="termCheck" class="form-check-input" id="termCheck">
@@ -156,18 +163,22 @@
                             </div><!--/modal fade-->
 
                                   <p>* For monthly booking, contact our office mobile number : +673 833 8669</p>
-                              
-                            </form>
                             <div class="text-center">
                             <button type="button" id="bookSubmit" class="btn btn-light btn-lg font-weight-bold" onclick="submitClick()" disabled="disabled">Submit</button>
+                            <br>
                             </div>
+                            </form>
                           </div>
                       </div>
-                  </div>
-            </div>
-      </div><!--/container-fluid-->
-      </section>
-    <!-- Moment Javascript -->
+          
+        </div>
+    </div>
+  </div> 
+</section><!--/bookingUi-section-->
+
+
+     <!-- Additional JavaScript-->
+     <!-- Moment Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -175,9 +186,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="esuite.js"></script>
 
-    <!-- Bootstrap notify & submit control Plugin -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <!-- Bootstrap notify & submit control Plugin -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.5/bootstrap-notify.min.js"></script>
-    
+
   </body>
 </html>
