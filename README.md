@@ -1,2 +1,2 @@
 # E-Suite
-This is just a E-Suite Booking System Prototype
+This is just an E-Suite Booking System Prototype
