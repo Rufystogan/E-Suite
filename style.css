@@ -25,9 +25,10 @@ body {
   font-family: poppin_regular;
 }
 
-#fbIcon , #igIcon{
+#fbIcon , #igIcon, #adminIcon{
       color: #d33127;
 }
+
 
 /* CUSTOMIZE THE JUMBOTRON
 -------------------------------------------------- */
@@ -209,4 +210,14 @@ label a{
     color: #d33127;
 }
 
+}
+
+/*Admin
+------------------------------------------------------------*/
+.adminBox{
+    margin-top: 5rem;
+    background:#F7D119;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 2px 2px 2px 2px #999;
 }
