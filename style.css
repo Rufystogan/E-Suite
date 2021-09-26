@@ -215,9 +215,30 @@ label a{
 /*Admin
 ------------------------------------------------------------*/
 .adminBox{
+    width: 50rem;
     margin-top: 3rem;
     background:#F7D119;
     border-radius: 5px;
     padding: 2rem;
     box-shadow: 2px 2px 2px 2px #999;
+}
+
+@media (max-width: 575.98px) {
+    .adminBox {
+     width: auto;
+     padding: 2rem;
+    }
+
+    .adminBox h2{
+     font-size: 10px 100%;
+    }
+
+    .adminBox p{
+     line-height: 1rem;
+     font-size: 10px 100%;
+    }
+
+    .btn{
+        size: 10px;
+    }
 }
